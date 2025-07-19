@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+  
+	<!-- Naming the rifle's research etc. -->
+    <defName>Research_FedorovAvtomat_by_wololooo</defName>
+    <label>Fedorov Avtomat</label>
+	
+	<description>Recovered from the fragmented memory of a collapsed orbital vault, the Fedorov Avtomat is a ghost from the dawn of automatic warfare — a weapon older than the world that buried it.
+
+Designed in the final years of Old Earth’s First World War, it was one of humanity’s first attempts to arm infantry with select-fire capability. Chambered in a lightweight intermediate cartridge and built with rifle-like ergonomics, the Fedorov was a vision ahead of its time — unstable, underbuilt, but undeniably groundbreaking.
+
+It was retired before the world was ready for it. Forgotten as Earth fell to silence.
+
+Centuries later, its schematics were uncovered among decaying data cores orbiting a dead Rim colony. Reassembled in steel and stubbornness, it lives again.
+Not perfect. Not modern. But original.
+A first spark, reignited on the edge of the galaxy.
+
+~wololooo</description>
+
+	<tab>SovietGuns_by_wololooo</tab>
+	
+	<!-- Cost and tech level. -->
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+
+	<!-- The research(es) should finished before the rifle's research. -->
+	
+	<prerequisites>
+      <li>Gunsmithing</li>
+	  <li>PrecisionRifling</li>
+	  <li>Soviet_Research_Program</li>
+	  <li>Soviet_SemiAuto_Rifle_Program</li>
+    </prerequisites>
+	
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
+	<!-- The place of rifle's on the research menu. -->
+    <researchViewX>2</researchViewX>
+    <researchViewY>1.5</researchViewY>
+	
+
+  </ResearchProjectDef>
+
+</Defs>

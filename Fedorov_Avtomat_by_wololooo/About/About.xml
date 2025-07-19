@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Fedorov Avtomat by Wololooo</name>
+  <author>wololooo</author>
+  <packageId>wololooo.FEDOROVAVTOMAT</packageId>
+  
+  <description>
+The Fedorov Avtomat is not just a relic — it is the spark of an idea that lit the path to modern infantry warfare. Conceived on Old Earth during the crucible of the First World War, it was the world’s first true attempt at creating an automatic rifle for the individual soldier — a machine far ahead of its time.
+
+Designed by Vladimir Fyodorov and originally chambered in a modified 6.5mm cartridge, the Fedorov Avtomat blurred the line between rifle and machine gun. Lighter than squad automatics, more versatile than bolt-actions, it was a revolutionary hybrid — elegant in concept, flawed in execution. Its reliability faltered. Ammunition supply was inconsistent. But in the right hands, it was a glimpse into the future.
+
+History moved on. Wars grew harsher, factories louder, doctrines colder. The Fedorov was retired, remembered only in footnotes and faded schematics — until Earth fell, and memory became myth.
+
+Centuries later, a partial schematic was recovered from a shattered vault buried beneath the ruins of a pre-Fall research station on a dust-blown Rimworld. A weaponsmith, half archaeologist and half lunatic, breathed life into the blueprint. Metal scraped, powder burned — and the Fedorov fired once more.
+
+Today, it walks the stars not as a weapon of war, but as a whisper of where war began to change. It is not common. It is not perfect. But it is the origin — reborn in the shadows of a broken galaxy.
+
+A forgotten beginning. A dream made steel. Too early for its world — just in time for ours.
+
+~wololooo
+</description>
+	
+   <modDependencies>
+	<li>
+		<packageId>wololooo.sovietResearchTab</packageId>
+		<displayName>Soviet Rifle Research Tab</displayName>
+		<downloadUrl>https://github.com/wo1olooo/Soviet-Rifle-Research-Tab-by-Wololooo</downloadUrl>
+	</li>
+  </modDependencies>
+  
+  <url>https://github.com/wo1olooo/Federov-Avtomat-Rifle-Mod</url>
+	
+	
+  <supportedVersions>
+	<li>1.6</li>
+    <li>1.5</li>
+  </supportedVersions>
+</ModMetaData>

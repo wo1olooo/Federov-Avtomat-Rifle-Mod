@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <SoundDef>
+    <defName>wololooo_fedorov_avtomat_firing_sound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/wololooo_Fedorov_Avtomat_Firing_Sound</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>      
+        <pitchRange>
+        <min>0.85</min>
+        <max>0.90</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

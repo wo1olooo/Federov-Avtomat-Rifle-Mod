@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+	<!-- Define the gun name, labels etc. -->
+    <defName>Gun_FedorovAvtomat_wololooo</defName>
+    <label>Fedorov Avtomat</label>
+	
+    <description>An ambitious weapon born from the dawn of automatic warfare — not a perfected machine, but the ancestor of everything that followed. Forged during the final years of Old Earth’s first global war, the Fedorov Avtomat marked one of humanity’s first true steps toward infantry-carried automatic fire.
+
+Developed by Vladimir Fyodorov and chambered in a lighter cartridge for better control, it stood apart from the bolt-actions of its time — compact, select-fire, and visionary. But it was fragile. Complex. Too early for the world it entered. The war ended. The weapon faded.
+
+Centuries later, its name survives only in fragments — half-corrupted files recovered from a ruined archive buried beneath the surface of a derelict Rimworld relay station. A weaponsmith, chasing ghosts and grit, brought it back.
+
+Now the Fedorov Avtomat walks again — rare, unstable, but blazing with legacy. It is not a modern tool. It is not efficient. But it is the spark that lit the path.
+
+A relic of firsts. A blueprint of rebellion. Alive once more, on the edge of everything.
+
+~wololooo</description>
+	
+	
+	<!-- The rifle's spite location: -->
+    <graphicData>
+      <texPath>Things/Equipment/wololooo_Fedorov_Avtomat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.60</drawSize>
+    </graphicData>
+	
+	<!-- The rifle's sound, I will use the basic game's sound currently. -->
+    <soundInteract>Interact_Rifle</soundInteract>
+	
+	<!-- The recipe of the gun. -->
+    <recipeMaker>
+	
+	  <!-- Where the weapon will crafted at. -->
+	  <recipeUsers>
+		<li>TableMachining</li>
+	  </recipeUsers>
+	  
+	  <!-- What should be researched before to create the gun. -->
+      <researchPrerequisite>Research_FedorovAvtomat_by_wololooo</researchPrerequisite>
+	  
+	  <!-- The skill requirement to craft the weapon. -->
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+	  
+    </recipeMaker>
+	
+	
+	<!-- By this, the gun also can be obtained from the quests. -->
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+	
+
+	<!-- The rifle's stats: -->
+    <statBases>
+      <WorkToMake>37000</WorkToMake>
+      <Mass>4.4</Mass>
+      <AccuracyTouch>0.67</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.61</AccuracyMedium>
+      <AccuracyLong>0.42</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+	  <MarketValue>400</MarketValue>
+	  <MaxHitPoints>75</MaxHitPoints>
+    </statBases>
+	
+	
+	<!-- Which materials and how many of them will cost the rifle to craft: -->
+	<costList>
+	  <Steel>62</Steel>
+	  <ComponentIndustrial>1</ComponentIndustrial>
+	  <WoodLog>20</WoodLog>
+	</costList>
+	
+	
+	<!-- Smelt back recources. -->
+	<smeltable>true</smeltable>
+	<smeltProducts>
+		<Steel>33</Steel>
+	</smeltProducts>
+	
+	
+	<!-- What can be done with the rifle and how will it sound like: -->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_FedorovAvtomat_65x50mm</defaultProjectile>
+        <warmupTime>1.15</warmupTime>
+        <range>27.5</range>
+        <burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <soundCast>wololooo_fedorov_avtomat_firing_sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>17</muzzleFlashScale>
+      </li>
+    </verbs>
+	
+	
+	<!-- The weapon tags: -->
+    <weaponTags>
+      <li>FedorovAvtomat</li>
+	  <li>wololoooSovietPack</li>
+	  <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+	
+	
+	<!-- Also what can be done with the other parts of the gun: -->
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	
+	
+	
+	<!-- The bullet will use the gun: -->
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_FedorovAvtomat_65x50mm</defName>
+    <label>6.5×50mm Arisaka Federov Avtomat Bullet</label>
+
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	
+	<!-- The bullet specifications. -->
+    <projectile>
+      <damageDef>Bullet</damageDef>
+
+      <damageAmountBase>12</damageAmountBase>
+	  
+      <speed>73</speed> 
+
+	  <stoppingPower>1.22</stoppingPower>
+	  
+	  <armorPenetrationBase>0.31</armorPenetrationBase>
+	  
+	  
+    </projectile>
+  </ThingDef>
+  
+</Defs>
